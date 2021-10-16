@@ -87,7 +87,7 @@ export const TimeSheet = (props) => {
                             content.link !== "" ? <Button type="primary" style={{ marginRight: 20, marginTop: 5 }} onClick={() => redirect_blank(content.link)}>Vào lớp</Button> : <></>
                         }
                         {
-                            content.link !== "" ? <Button type="primary">Điểm danh</Button> : <></>
+                            content.link !== "" ? <Button type="primary" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")}>Điểm danh</Button> : <></>
                         }
                     </>
                 )
@@ -103,7 +103,7 @@ export const TimeSheet = (props) => {
                 title="Thời khóa biểu"
                 subTitle="TKB alpha version"
                 extra={[
-                    <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng chưa được triển khai!", "info")}>Cập nhật</Button>,
+                    <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")}>Cập nhật</Button>,
                     <Button key="2" href="https://www.facebook.com/huuthe87">Liên hệ giáo viên</Button>,
                     <Button key="1" type="danger">Báo lỗi </Button>
                 ]}
@@ -126,12 +126,11 @@ export const TimeSheet = (props) => {
             </PageHeader>
 
             <Select style={{ width: 120, marginTop: 15, marginBottom: 15 }} placeholder="Chọn ngày" onChange={handleChange}>
-                <Option value="2">Thứ 2</Option>
-                <Option value="3">Thứ 3</Option>
-                <Option value="4">Thứ 4</Option>
-                <Option value="5">Thứ 5</Option>
-                <Option value="6">Thứ 6</Option>
-                <Option value="7">Thứ 7</Option>
+                {
+                    ["2", "3", "4", "5", "6", "7"].map(item => {
+                        return <Option value={item}>Thứ {item}</Option>
+                    })
+                }
             </Select>
 
             <Table columns={columns} dataSource={localData} pagination={false} />

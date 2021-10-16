@@ -79,7 +79,7 @@ export const HomePage = (props) => {
             }
 
 
-            <Button type="primary" icon={<SearchOutlined />} onClick={onSubmit}>Go</Button>
+            <Button type="primary" icon={<SearchOutlined />} onClick={onSubmit}>Tra cứu</Button>
         </div>
     );
 }
