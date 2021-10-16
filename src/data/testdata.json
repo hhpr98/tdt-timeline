@@ -5,27 +5,27 @@
 		[
 			{
                 "period": 1,
-				"subjects": "",
+				"subjects": "Chào cờ",
                 "teacher": "",
                 "link": ""
 			},
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
+				"subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
 			},
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
+				"subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
 			},
             {
                 "period": 4,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
+				"subjects": "Vật lí",
+                "teacher": "Trân",
+                "link": "https://meet.google.com/ege-cemv-uvt"
 			},
             {
                 "period": 5,

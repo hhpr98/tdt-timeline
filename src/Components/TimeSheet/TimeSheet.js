@@ -4,6 +4,9 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { DataContext } from "../../Provider/DataProvider";
 import dataContent from "../../data/testdata.json";
+import { Select } from 'antd';
+
+const { Option } = Select;
 
 export const TimeSheet = (props) => {
 
@@ -13,37 +16,27 @@ export const TimeSheet = (props) => {
 
     useEffect(() => {
         setPreData(dataContent);
-        for (const [key, value] of Object.entries(dataContent)) {
-            // get timesheet of this class
-            if (key.toLowerCase() === className.toLowerCase()) {
-                var dataArr = [];
-
-                for (var _period = 1; _period <= 10; _period++) {
-                    const objToAdd = {
-                        period: _period,
-                        mon: "",
-                        tue: "",
-                        wen: "",
-                        thu: "",
-                        fri: "",
-                        sat: ""
-                    }
-                    dataArr.push(objToAdd);
-                }
-                
-                console.log(value[2])
-                console.log(value)
-                console.log(dataArr)
-
-                setLocalData(dataArr);
-
-                break;
-            }
-        }
     }, []);
 
     const handleBack = () => {
         window.location.href = "#";
+    }
+
+    const handleChange = (value) => {
+        for (const [key, val] of Object.entries(preData)) {
+            // get timesheet of this class
+            if (key.toLowerCase() === className.toLowerCase()) {
+                const dataOfThisDay = val[value];
+                var dataArr = [];
+                dataOfThisDay.forEach((item) => {
+                    dataArr.push({
+                        period: item.period,
+                        content: item
+                    });
+                });
+                setLocalData(dataArr);
+            }
+        }
     }
 
     const columns = [
@@ -51,36 +44,31 @@ export const TimeSheet = (props) => {
             title: "Tiết",
             dataIndex: "period",
             key: "period",
+            width: "10%"
         },
         {
-            title: "Thứ 2",
-            dataIndex: "mon",
-            key: "mon",
-        },
-        {
-            title: "Thứ 3",
-            dataIndex: "tue",
-            key: "tue",
-        },
-        {
-            title: "Thứ 4",
-            dataIndex: "wen",
-            key: "wen",
-        },
-        {
-            title: "Thứ 5",
-            key: "thu",
-            dataIndex: "thu"
-        },
-        {
-            title: "Thứ 6",
-            key: "fri",
-            dataIndex: "fri"
-        },
-        {
-            title: "Thứ 7",
-            key: "sat",
-            dataIndex: "sat"
+            title: "Nội dung",
+            dataIndex: "content",
+            key: "content",
+            render: content => {
+                console.log(content)
+                return (
+                    <>
+                        <div><b>{content.subjects}</b></div>
+                        {
+                            content.teacher !== "" ? <div>Giáo viên: {content.teacher}</div> : <></>
+                        }
+                        {
+                            content.link !== "" ? <div>Vào lớp : <a href={content.link} target="_blank">Tham gia tại đây</a></div> : <></>
+                        }
+                        {
+                            content.link !== "" ? <div>Điểm danh : <a href={content.link} target="_blank">Điểm danh tại đây</a></div> : <></>
+                        }
+                        
+                    </>
+
+                )
+            }
         }
     ];
 
@@ -90,7 +78,7 @@ export const TimeSheet = (props) => {
                 ghost={false}
                 onBack={handleBack}
                 title="Thời khóa biểu"
-                subTitle="Lớp ABC"
+                subTitle={`Lớp ${className}`}
                 extra={[
                     <Button key="3">Cập nhật</Button>,
                     <Button key="2">Liên hệ giáo viên</Button>,
@@ -107,9 +95,18 @@ export const TimeSheet = (props) => {
                 </Descriptions>
             </PageHeader>
 
+            <Select style={{ width: 120, marginTop: 15, marginBottom: 15 }} placeholder="Chọn ngày" onChange={handleChange}>
+                <Option value="2">Thứ 2</Option>
+                <Option value="3">Thứ 3</Option>
+                <Option value="4">Thứ 4</Option>
+                <Option value="5">Thứ 5</Option>
+                <Option value="6">Thứ 6</Option>
+                <Option value="7">Thứ 7</Option>
+            </Select>
+
             <Table columns={columns} dataSource={localData} />
 
 
-        </div>
+        </div >
     );
 }
