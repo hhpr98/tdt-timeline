@@ -1,5 +1,3 @@
-import moment from "moment";
-
 export const covertPeriodToTime = (period) => {
 
     var subjectInfo = {
@@ -18,8 +16,8 @@ export const covertPeriodToTime = (period) => {
             subjectInfo.endTime = "08:00";
             break;
         case 2:
-            subjectInfo.startTime = "20:15";
-            subjectInfo.endTime = "21:00";
+            subjectInfo.startTime = "08:15";
+            subjectInfo.endTime = "08:00";
             break;
         case 3:
             subjectInfo.startTime = "09:30";

@@ -6,6 +6,7 @@ import { DataContext } from "../../Provider/DataProvider";
 import dataContent from "../../data/testdata.json";
 import "./TimeSheet.css";
 import { covertPeriodToTime } from "../../Utils/covertPeriodToTime";
+import moment from "moment";
 
 const { Option } = Select;
 
@@ -14,9 +15,13 @@ export const TimeSheet = (props) => {
     const { preData, setPreData } = useContext(DataContext);
     const { className } = useParams();
     const [localData, setLocalData] = useState([]);
+    const [localDateTime, setLocalDateTime] = useState("");
 
     useEffect(() => {
         setPreData(dataContent);
+        setInterval(() => {
+            setLocalDateTime(moment().format("dddd DD/MM/YYYY HH:mm:ss"));
+        }, 1000);
     }, []);
 
     const handleBack = () => {
@@ -62,9 +67,9 @@ export const TimeSheet = (props) => {
                 return (
                     <>
                         {
-                            subjectDetail.isReady ? <div style={{color: "red"}}>[Đang diễn ra]</div> : <></>
+                            subjectDetail.isReady ? <div style={{ color: "red" }}>[Đang diễn ra]</div> : <></>
                         }
-                        <div><b>{content.subjects}</b></div>
+                        <div style={{ fontSize: 21 }}><b>{content.subjects}</b></div>
                         <div>Thời gian bắt đầu: {subjectDetail.startTime}</div>
                         <div>Thời gian kết thúc: {subjectDetail.endTime}</div>
                         {
@@ -88,20 +93,27 @@ export const TimeSheet = (props) => {
                 ghost={false}
                 onBack={handleBack}
                 title="Thời khóa biểu"
-                subTitle={`Lớp ${className}`}
+                subTitle="TKB alpha version"
                 extra={[
                     <Button key="3">Cập nhật</Button>,
                     <Button key="2">Liên hệ giáo viên</Button>,
                     <Button key="1" type="primary">Báo cáo sai </Button>
                 ]}
             >
-                <Descriptions size="small" column={3}>
+                <Descriptions size="small" column={4}>
                     <Descriptions.Item label="Tạo bởi">Admin</Descriptions.Item>
+                    <Descriptions.Item label="Lớp">{className}</Descriptions.Item>
                     <Descriptions.Item label="Từ">18:10:2021 00:00:00</Descriptions.Item>
                     <Descriptions.Item label="Đến">23:10:2021 00:00:00</Descriptions.Item>
+                </Descriptions>
+                <Descriptions size="small" column={4}>
                     <Descriptions.Item label="Tuần">01</Descriptions.Item>
                     <Descriptions.Item label="Học kì">1</Descriptions.Item>
                     <Descriptions.Item label="Năm học">2021-2022</Descriptions.Item>
+                    <Descriptions.Item label="GVCN"></Descriptions.Item>
+                </Descriptions>
+                <Descriptions size="small">
+                    <Descriptions.Item label="Giờ hệ thống">{localDateTime}</Descriptions.Item>
                 </Descriptions>
             </PageHeader>
 
