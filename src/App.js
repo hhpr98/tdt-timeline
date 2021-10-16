@@ -9,7 +9,7 @@ import { DataProvider } from "./Provider/DataProvider";
 
 function App() {
   return (
-    <div className="test">
+    <div className="full">
       <DataProvider>
         <HashRouter>
           <Route exact path="/" component={HomePage} />

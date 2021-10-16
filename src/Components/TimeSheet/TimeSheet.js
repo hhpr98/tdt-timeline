@@ -127,7 +127,7 @@ export const TimeSheet = (props) => {
                 <Option value="7">Thứ 7</Option>
             </Select>
 
-            <Table columns={columns} dataSource={localData} />
+            <Table columns={columns} dataSource={localData} pagination={false}/>
 
             <div className="note" style={{ color: "red", fontSize: 14 }}><b>Lưu ý:</b> Buổi sáng : tiết 1 đến tiết 5, Buổi chiều: tiết 6 đến tiết 10</div>
 
