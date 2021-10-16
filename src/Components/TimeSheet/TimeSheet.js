@@ -1,10 +1,11 @@
 import { Button } from "antd";
-import { PageHeader, Descriptions, Table } from "antd";
+import { PageHeader, Descriptions, Table, Select } from "antd";
 import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { DataContext } from "../../Provider/DataProvider";
 import dataContent from "../../data/testdata.json";
-import { Select } from 'antd';
+import "./TimeSheet.css";
+import { covertPeriodToTime } from "../../Utils/covertPeriodToTime";
 
 const { Option } = Select;
 
@@ -51,10 +52,21 @@ export const TimeSheet = (props) => {
             dataIndex: "content",
             key: "content",
             render: content => {
-                console.log(content)
+                if (content.subjects === "")
+                    return (
+                        <div>Không có môn học</div>
+                    );
+
+                const subjectDetail = covertPeriodToTime(content.period);
+
                 return (
                     <>
+                        {
+                            subjectDetail.isReady ? <div style={{color: "red"}}>[Đang diễn ra]</div> : <></>
+                        }
                         <div><b>{content.subjects}</b></div>
+                        <div>Thời gian bắt đầu: {subjectDetail.startTime}</div>
+                        <div>Thời gian kết thúc: {subjectDetail.endTime}</div>
                         {
                             content.teacher !== "" ? <div>Giáo viên: {content.teacher}</div> : <></>
                         }
@@ -64,9 +76,7 @@ export const TimeSheet = (props) => {
                         {
                             content.link !== "" ? <div>Điểm danh : <a href={content.link} target="_blank">Điểm danh tại đây</a></div> : <></>
                         }
-                        
                     </>
-
                 )
             }
         }
@@ -87,11 +97,11 @@ export const TimeSheet = (props) => {
             >
                 <Descriptions size="small" column={3}>
                     <Descriptions.Item label="Tạo bởi">Admin</Descriptions.Item>
-                    <Descriptions.Item label="Từ">2021/00/00 00:00:00</Descriptions.Item>
-                    <Descriptions.Item label="Đến">2021/00/00 00:00:00</Descriptions.Item>
+                    <Descriptions.Item label="Từ">18:10:2021 00:00:00</Descriptions.Item>
+                    <Descriptions.Item label="Đến">23:10:2021 00:00:00</Descriptions.Item>
                     <Descriptions.Item label="Tuần">01</Descriptions.Item>
                     <Descriptions.Item label="Học kì">1</Descriptions.Item>
-                    <Descriptions.Item label="Năm học">2021</Descriptions.Item>
+                    <Descriptions.Item label="Năm học">2021-2022</Descriptions.Item>
                 </Descriptions>
             </PageHeader>
 
@@ -106,6 +116,7 @@ export const TimeSheet = (props) => {
 
             <Table columns={columns} dataSource={localData} />
 
+            <div className="note" style={{ color: "red", fontSize: 14 }}><b>Lưu ý:</b> Buổi sáng : tiết 1 đến tiết 5, Buổi chiều: tiết 6 đến tiết 10</div>
 
         </div >
     );
