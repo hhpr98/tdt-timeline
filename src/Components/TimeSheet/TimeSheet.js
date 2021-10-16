@@ -101,10 +101,10 @@ export const TimeSheet = (props) => {
                 ghost={false}
                 onBack={handleBack}
                 title="Thời khóa biểu"
-                subTitle="TKB alpha version"
+                subTitle="TKB alpha 1.0"
                 extra={[
-                    <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")}>Cập nhật</Button>,
-                    <Button key="2" href="https://www.facebook.com/huuthe87">Liên hệ giáo viên</Button>,
+                    <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")} type="primary">Cập nhật</Button>,
+                    <Button key="2" href="https://www.facebook.com/huuthe87" type="primary">Liên hệ giáo viên</Button>,
                     <Button key="1" type="danger">Báo lỗi </Button>
                 ]}
             >
