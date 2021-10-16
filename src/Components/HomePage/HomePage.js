@@ -15,7 +15,6 @@ export const HomePage = (props) => {
         ["12C1", "12C2", "12C3"]
     ];
 
-    const [selectedGrade, setSelectedGrade] = useState("");
     const [selectedClass, setSelectedClass] = useState("");
     const [className, setClassName] = useState([]);
 
@@ -28,8 +27,6 @@ export const HomePage = (props) => {
         } else if (value.startsWith("12")) {
             setClassName(allClass[2]);
         }
-
-        setSelectedGrade(value);
     }
 
     const onClassChange = (value) => {

@@ -3,11 +3,10 @@ export const covertPeriodToTime = (period) => {
     var subjectInfo = {
         startTime: "00:00",
         endTime: "00:00",
-        isReady: false
+        isReady: false,
+        willStartSoon: false,
+        willStartIn: 0
     }
-
-
-
 
 
     switch (period) {
@@ -17,7 +16,7 @@ export const covertPeriodToTime = (period) => {
             break;
         case 2:
             subjectInfo.startTime = "08:15";
-            subjectInfo.endTime = "08:00";
+            subjectInfo.endTime = "09:00";
             break;
         case 3:
             subjectInfo.startTime = "09:30";
@@ -51,14 +50,19 @@ export const covertPeriodToTime = (period) => {
             subjectInfo.startTime = "17:30";
             subjectInfo.endTime = "18:15";
             break;
+        default:
+            break;
     }
 
-    subjectInfo.isReady = isReadylearningTime(subjectInfo.startTime, subjectInfo.endTime);
+    const subjectTimeInfo = getSubjectTimeInfo(subjectInfo.startTime, subjectInfo.endTime);
+    subjectInfo.isReady = subjectTimeInfo._isReady;
+    subjectInfo.willStartIn = subjectTimeInfo._willStartIn;
+    subjectInfo.willStartSoon = subjectTimeInfo._willStartSoon;
 
     return subjectInfo;
 }
 
-const isReadylearningTime = (startTime, endTime) => {
+const getSubjectTimeInfo = (startTime, endTime) => {
     const startTimeSplit = startTime.split(":");
     const endTimeSplit = endTime.split(":");
 
@@ -75,7 +79,14 @@ const isReadylearningTime = (startTime, endTime) => {
     const mCurrent = today.getMinutes();
     const totalCurrent = hCurrent * 60 + mCurrent;
 
-    if (totalCurrent >= totalStart && totalCurrent <= totalEnd) return true;
-    return false;
+    const _isReady = totalCurrent >= totalStart && totalCurrent <= totalEnd ? true : false;
+    var _willStartIn = totalStart - totalCurrent;
+    const _willStartSoon = _willStartIn > 0 && _willStartIn < 60 ? true : false;
+
+    return {
+        _isReady,
+        _willStartIn,
+        _willStartSoon
+    }
 
 }

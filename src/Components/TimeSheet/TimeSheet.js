@@ -19,11 +19,15 @@ export const TimeSheet = (props) => {
     const [localDateTime, setLocalDateTime] = useState("");
 
     useEffect(() => {
-        setPreData(dataContent);
+        onSetPreData();
         setInterval(() => {
             setLocalDateTime(moment().format("dddd DD/MM/YYYY HH:mm:ss"));
         }, 1000);
     }, []);
+
+    const onSetPreData = () => {
+        setPreData(dataContent);
+    }
 
     const handleBack = () => {
         window.location.href = "#";
@@ -77,6 +81,9 @@ export const TimeSheet = (props) => {
                         {
                             subjectDetail.isReady ? <div style={{ color: "red" }}>[Đang diễn ra]</div> : <></>
                         }
+                        {
+                            subjectDetail.willStartSoon ? <div style={{ color: "blue" }}>[Diễn ra sau {subjectDetail.willStartIn} phút nữa]</div> : <></>
+                        }
                         <div style={{ fontSize: 21 }}><b>{content.subjects}</b></div>
                         <div>Thời gian bắt đầu: {subjectDetail.startTime}</div>
                         <div>Thời gian kết thúc: {subjectDetail.endTime}</div>
@@ -105,23 +112,23 @@ export const TimeSheet = (props) => {
                 extra={[
                     <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")} type="primary">Cập nhật</Button>,
                     <Button key="2" href="https://www.facebook.com/huuthe87" type="primary">Liên hệ giáo viên</Button>,
-                    <Button key="1" type="danger">Báo lỗi </Button>
+                    <Button key="1" type="danger" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")}>Báo lỗi </Button>
                 ]}
             >
                 <Descriptions size="small" column={4}>
-                    <Descriptions.Item label="Tạo bởi">Admin</Descriptions.Item>
-                    <Descriptions.Item label="Lớp">{className}</Descriptions.Item>
-                    <Descriptions.Item label="Từ">18:10:2021 00:00:00</Descriptions.Item>
-                    <Descriptions.Item label="Đến">23:10:2021 00:00:00</Descriptions.Item>
+                    <Descriptions.Item label="Tạo bởi"><b>Admin</b></Descriptions.Item>
+                    <Descriptions.Item label="Lớp"><b>{className}</b></Descriptions.Item>
+                    <Descriptions.Item label="Từ"><b>18:10:2021 00:00:00</b></Descriptions.Item>
+                    <Descriptions.Item label="Đến"><b>23:10:2021 00:00:00</b></Descriptions.Item>
                 </Descriptions>
                 <Descriptions size="small" column={4}>
-                    <Descriptions.Item label="Tuần">01</Descriptions.Item>
-                    <Descriptions.Item label="Học kì">1</Descriptions.Item>
-                    <Descriptions.Item label="Năm học">2021-2022</Descriptions.Item>
-                    <Descriptions.Item label="GVCN"></Descriptions.Item>
+                    <Descriptions.Item label="Tuần"><b>01</b></Descriptions.Item>
+                    <Descriptions.Item label="Học kì"><b>1</b></Descriptions.Item>
+                    <Descriptions.Item label="Năm học"><b>2021-2022</b></Descriptions.Item>
+                    <Descriptions.Item label="GVCN"><b></b></Descriptions.Item>
                 </Descriptions>
                 <Descriptions size="small">
-                    <Descriptions.Item label="Giờ hệ thống">{localDateTime}</Descriptions.Item>
+                    <Descriptions.Item label="Giờ hệ thống"><b>{localDateTime}</b></Descriptions.Item>
                 </Descriptions>
             </PageHeader>
 
