@@ -29,6 +29,13 @@ export const TimeSheet = (props) => {
         window.location.href = "#";
     }
 
+    const redirect_blank = (url) => {
+        var a = document.createElement('a');
+        a.target = "_blank";
+        a.href = url;
+        a.click();
+    }
+
     const handleChange = (value) => {
         for (const [key, val] of Object.entries(preData)) {
             // get timesheet of this class
@@ -74,13 +81,13 @@ export const TimeSheet = (props) => {
                         <div>Thời gian bắt đầu: {subjectDetail.startTime}</div>
                         <div>Thời gian kết thúc: {subjectDetail.endTime}</div>
                         {
-                            content.teacher !== "" ? <div>Giáo viên: {content.teacher}</div> : <></>
+                            content.teacher !== "" ? <div>Giáo viên: <b> {content.teacher}</b></div> : <></>
                         }
                         {
-                            content.link !== "" ? <Button type="primary" href={content.link} style={{ marginRight: 20, marginTop: 5 }}>Vào lớp</Button> : <></>
+                            content.link !== "" ? <Button type="primary" style={{ marginRight: 20, marginTop: 5 }} onClick={() => redirect_blank(content.link)}>Vào lớp</Button> : <></>
                         }
                         {
-                            content.link !== "" ? <Button type="primary" href={content.link}>Điểm danh</Button> : <></>
+                            content.link !== "" ? <Button type="primary">Điểm danh</Button> : <></>
                         }
                     </>
                 )
@@ -96,7 +103,7 @@ export const TimeSheet = (props) => {
                 title="Thời khóa biểu"
                 subTitle="TKB alpha version"
                 extra={[
-                    <Button key="3" onClick={()=>Swal.fire("Thông báo","Chức năng chưa được triển khai!","info")}>Cập nhật</Button>,
+                    <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng chưa được triển khai!", "info")}>Cập nhật</Button>,
                     <Button key="2" href="https://www.facebook.com/huuthe87">Liên hệ giáo viên</Button>,
                     <Button key="1" type="danger">Báo lỗi </Button>
                 ]}
@@ -127,7 +134,7 @@ export const TimeSheet = (props) => {
                 <Option value="7">Thứ 7</Option>
             </Select>
 
-            <Table columns={columns} dataSource={localData} pagination={false}/>
+            <Table columns={columns} dataSource={localData} pagination={false} />
 
             <div className="note" style={{ color: "red", fontSize: 14 }}><b>Lưu ý:</b> Buổi sáng : tiết 1 đến tiết 5, Buổi chiều: tiết 6 đến tiết 10</div>
 
