@@ -1,383 +1,750 @@
 {
-	"10C1": 
-	{
-		"2": 
-		[
-			{
+    "10C1": {
+        "2": [
+            {
                 "period": 1,
-				"subjects": "Chào cờ",
+                "subjects": "Chào cờ",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 2,
-				"subjects": "Toán",
+                "subjects": "Toán",
                 "teacher": "Minh",
                 "link": "https://meet.google.com/ege-cemv-uvt"
-			},
+            },
             {
                 "period": 3,
-				"subjects": "Toán",
+                "subjects": "Toán",
                 "teacher": "Minh",
                 "link": "https://meet.google.com/ege-cemv-uvt"
-			},
+            },
             {
                 "period": 4,
-				"subjects": "Vật lí",
+                "subjects": "Vật lí",
                 "teacher": "Trân",
                 "link": "https://meet.google.com/ege-cemv-uvt"
-			},
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Tin",
+                "teacher": "Thảo",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 7,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Tin",
+                "teacher": "Thảo",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 8,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "GDQP",
+                "teacher": "Tr.Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		],
-        "3": 
-		[
-			{
+            }
+        ],
+        "3": [
+            {
                 "period": 1,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Tiếng Anh",
+                "teacher": "P.Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Công Nghệ",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 4,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Thể dục",
+                "teacher": "Vĩnh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 7,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Thể dục",
+                "teacher": "Vĩnh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 8,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Địa",
+                "teacher": "Uyên",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		],
-        "4": 
-		[
-			{
+            }
+        ],
+        "4": [
+            {
                 "period": 1,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Tiếng Anh",
+                "teacher": "P. Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Văn",
+                "teacher": "Hương",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Văn",
+                "teacher": "Hương",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 4,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 7,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Tiếng Anh",
+                "teacher": "P. Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 8,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		],
-        "5": 
-		[
-			{
+            }
+        ],
+        "5": [
+            {
                 "period": 1,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Công Nghệ",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Địa",
+                "teacher": "Uyên",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
+                "subjects": "Văn",
+                "teacher": "Hương",
                 "link": ""
-			},
+            },
             {
                 "period": 4,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 7,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 8,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		],
-        "6": 
-		[
-			{
+            }
+        ],
+        "6": [
+            {
                 "period": 1,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Hóa",
+                "teacher": "Hòa",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Lịch sử",
+                "teacher": "Hiền",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "GDCD",
+                "teacher": "Hiền",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 4,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 7,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 8,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		],
-        "7": 
-		[
-			{
+            }
+        ],
+        "7": [
+            {
                 "period": 1,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Vật lí",
+                "teacher": "Trân",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 2,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Hóa",
+                "teacher": "Hòa",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 3,
-				"subjects": "",
-                "teacher": "",
-                "link": ""
-			},
+                "subjects": "Sinh",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 4,
-				"subjects": "",
+                "subjects": "Sinh hoạt lớp",
                 "teacher": "",
-                "link": ""
-			},
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
             {
                 "period": 5,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 6,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 7,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 8,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 9,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			},
+            },
             {
                 "period": 10,
-				"subjects": "",
+                "subjects": "",
                 "teacher": "",
                 "link": ""
-			}
-		]
-	}
+            }
+        ]
+    },
+    "10C2": {
+        "2": [
+            {
+                "period": 1,
+                "subjects": "Chào cờ",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 2,
+                "subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 4,
+                "subjects": "Vật lí",
+                "teacher": "Trân",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "Tin",
+                "teacher": "Thảo",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 7,
+                "subjects": "Tin",
+                "teacher": "Thảo",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 8,
+                "subjects": "GDQP",
+                "teacher": "Tr.Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ],
+        "3": [
+            {
+                "period": 1,
+                "subjects": "Toán",
+                "teacher": "Minh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 2,
+                "subjects": "Tiếng Anh",
+                "teacher": "P.Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "Công Nghệ",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 4,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "Thể dục",
+                "teacher": "Vĩnh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 7,
+                "subjects": "Thể dục",
+                "teacher": "Vĩnh",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 8,
+                "subjects": "Địa",
+                "teacher": "Uyên",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ],
+        "4": [
+            {
+                "period": 1,
+                "subjects": "Tiếng Anh",
+                "teacher": "P. Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 2,
+                "subjects": "Văn",
+                "teacher": "Hương",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "Văn",
+                "teacher": "Hương",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 4,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 7,
+                "subjects": "Tiếng Anh",
+                "teacher": "P. Yến",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 8,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ],
+        "5": [
+            {
+                "period": 1,
+                "subjects": "Công Nghệ",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 2,
+                "subjects": "Địa",
+                "teacher": "Uyên",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "Văn",
+                "teacher": "Hương",
+                "link": ""
+            },
+            {
+                "period": 4,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 7,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 8,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ],
+        "6": [
+            {
+                "period": 1,
+                "subjects": "Hóa",
+                "teacher": "Hòa",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 2,
+                "subjects": "Lịch sử",
+                "teacher": "Hiền",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "GDCD",
+                "teacher": "Hiền",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 4,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 7,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 8,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ],
+        "7": [
+            {
+                "period": 1,
+                "subjects": "Vật lí",
+                "teacher": "Trân",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 2,
+                "subjects": "Hóa",
+                "teacher": "Hòa",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 3,
+                "subjects": "Sinh",
+                "teacher": "Hà",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 4,
+                "subjects": "Sinh hoạt lớp",
+                "teacher": "",
+                "link": "https://meet.google.com/ege-cemv-uvt"
+            },
+            {
+                "period": 5,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 6,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 7,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 8,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 9,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            },
+            {
+                "period": 10,
+                "subjects": "",
+                "teacher": "",
+                "link": ""
+            }
+        ]
+    }
 }

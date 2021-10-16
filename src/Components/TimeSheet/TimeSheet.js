@@ -97,7 +97,7 @@ export const TimeSheet = (props) => {
                 extra={[
                     <Button key="3">Cập nhật</Button>,
                     <Button key="2">Liên hệ giáo viên</Button>,
-                    <Button key="1" type="primary">Báo cáo sai </Button>
+                    <Button key="1" type="primary">Báo lỗi </Button>
                 ]}
             >
                 <Descriptions size="small" column={4}>

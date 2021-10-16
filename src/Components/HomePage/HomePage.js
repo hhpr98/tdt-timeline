@@ -1,6 +1,7 @@
 import { PageHeader, Descriptions, Typography, Select, Button } from "antd";
 import { useState } from "react";
 import { SearchOutlined } from '@ant-design/icons';
+import Swal from "sweetalert2";
 
 const { Title } = Typography;
 const { Option } = Select;
@@ -36,7 +37,10 @@ export const HomePage = (props) => {
     }
 
     const onSubmit = () => {
-        if (selectedClass === "") return;
+        if (selectedClass === "") {
+            Swal.fire("Thông báo", "Vui lòng chọn đúng lớp học", "error");
+            return;
+        }
 
         window.location.href = "#timesheet/" + selectedClass;
     }
