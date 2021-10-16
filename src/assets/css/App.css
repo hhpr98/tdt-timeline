@@ -6,3 +6,15 @@ body {
 .full {
     margin: 100px;
 }
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
