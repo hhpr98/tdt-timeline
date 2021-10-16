@@ -7,6 +7,7 @@ import dataContent from "../../data/testdata.json";
 import "./TimeSheet.css";
 import { covertPeriodToTime } from "../../Utils/covertPeriodToTime";
 import moment from "moment";
+import Swal from "sweetalert2";
 
 const { Option } = Select;
 
@@ -76,10 +77,10 @@ export const TimeSheet = (props) => {
                             content.teacher !== "" ? <div>Giáo viên: {content.teacher}</div> : <></>
                         }
                         {
-                            content.link !== "" ? <div>Vào lớp : <a href={content.link} target="_blank">Tham gia tại đây</a></div> : <></>
+                            content.link !== "" ? <Button type="primary" href={content.link} style={{ marginRight: 20, marginTop: 5 }}>Vào lớp</Button> : <></>
                         }
                         {
-                            content.link !== "" ? <div>Điểm danh : <a href={content.link} target="_blank">Điểm danh tại đây</a></div> : <></>
+                            content.link !== "" ? <Button type="primary" href={content.link}>Điểm danh</Button> : <></>
                         }
                     </>
                 )
@@ -95,9 +96,9 @@ export const TimeSheet = (props) => {
                 title="Thời khóa biểu"
                 subTitle="TKB alpha version"
                 extra={[
-                    <Button key="3">Cập nhật</Button>,
-                    <Button key="2">Liên hệ giáo viên</Button>,
-                    <Button key="1" type="primary">Báo lỗi </Button>
+                    <Button key="3" onClick={()=>Swal.fire("Thông báo","Chức năng chưa được triển khai!","info")}>Cập nhật</Button>,
+                    <Button key="2" href="https://www.facebook.com/huuthe87">Liên hệ giáo viên</Button>,
+                    <Button key="1" type="danger">Báo lỗi </Button>
                 ]}
             >
                 <Descriptions size="small" column={4}>
