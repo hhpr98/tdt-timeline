@@ -111,8 +111,8 @@ export const TimeSheet = (props) => {
                 subTitle="TKB alpha 1.0"
                 extra={[
                     <Button key="3" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")} type="primary">Cập nhật</Button>,
-                    <Button key="2" href="https://www.facebook.com/huuthe87" type="primary">Liên hệ giáo viên</Button>,
-                    <Button key="1" type="danger" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")}>Báo lỗi </Button>
+                    <Button key="2" onClick={() => redirect_blank("https://www.facebook.com/huuthe87")} type="primary">Liên hệ giáo viên</Button>,
+                    <Button key="1" onClick={() => Swal.fire("Thông báo", "Chức năng đang được triển khai!", "info")} type="danger">Báo lỗi </Button>
                 ]}
             >
                 <Descriptions size="small" column={4}>
