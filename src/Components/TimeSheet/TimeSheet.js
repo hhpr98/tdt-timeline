@@ -133,7 +133,7 @@ export const TimeSheet = (props) => {
             <Select style={{ width: 120, marginTop: 15, marginBottom: 15 }} placeholder="Chọn ngày" onChange={handleChange}>
                 {
                     ["2", "3", "4", "5", "6", "7"].map(item => {
-                        return <Option value={item}>Thứ {item}</Option>
+                        return <Option value={item} key={item}>Thứ {item}</Option>
                     })
                 }
             </Select>
