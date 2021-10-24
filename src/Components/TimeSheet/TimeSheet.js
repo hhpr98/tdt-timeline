@@ -19,15 +19,13 @@ export const TimeSheet = (props) => {
     const [localDateTime, setLocalDateTime] = useState("");
 
     useEffect(() => {
-        onSetPreData();
+        setPreData(dataContent);
         setInterval(() => {
             setLocalDateTime(moment().format("dddd DD/MM/YYYY HH:mm:ss"));
         }, 1000);
-    }, []);
+    }, [setPreData]);
 
-    const onSetPreData = () => {
-        setPreData(dataContent);
-    }
+    
 
     const handleBack = () => {
         window.location.href = "#";
@@ -45,7 +43,7 @@ export const TimeSheet = (props) => {
             // get timesheet of this class
             if (key.toLowerCase() === className.toLowerCase()) {
                 const dataOfThisDay = val[value];
-                var dataArr = [];
+                const dataArr = [];
                 dataOfThisDay.forEach((item) => {
                     dataArr.push({
                         period: item.period,
